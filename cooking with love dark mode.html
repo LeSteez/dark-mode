@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cooking Project</title>
+
+    <style>
+        body {
+            background: linear-gradient(180deg, hsla(358, 85%, 68%, 1) 0%, hsla(41, 98%, 49%, 1) 100%);
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        p {
+            font-size: 18px;
+            line-height: 1.5;
+        }
+
+        img {
+            max-width: 100%;
+        }
+
+        button {
+            display: block;
+            margin: 0 auto;
+            border: 1px solid #000;
+            background: #fff;
+            font-size: 20px;
+            border-radius: 6px;
+            padding: 10px 15px;
+            transition: all 150ms ease-in-out;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #F3715B;
+        }
+
+        a {
+            text-decoration: none;
+            color: #F3715B;
+        }
+
+        a:hover {
+            text-decoration: overline;
+            color: #F3715B;
+        }
+
+        footer {
+            text-align: center;
+            margin: 10px 0;
+            font-size: 18px;
+        }
+
+        .container {
+            max-width: 600px;
+            background: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px auto;
+        }
+
+        .dark-mode {
+            font-size: 12px;
+            background: #000;
+            color: #fff;
+            padding: 5px 8px;
+        }
+
+        .dark-mode:hover {
+            font-size: 12px;
+            background: #fff;
+            color: #000;
+            padding: 5px 8px;
+        }
+
+        .intro-pic {
+            border-radius: 10px;
+            transition: all 150ms ease-in-out;
+        }
+
+        .intro-pic:hover {
+            transform: scale(1.1);
+            filter: contrast(80%);
+        }
+
+        .grid {
+            margin: 15px 0;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-gap: 15px;
+        }
+
+        .grid img {
+            width: 100%;
+            border-radius: 8px;
+            object-fit: cover;
+            aspect-ratio: 3 /2;
+            transition: all 150ms ease-in-out;
+        }
+
+        .dark {
+            background: #000;
+            color: #fff;
+        }
+
+        .dark .container {
+            background: linear-gradient(180deg, hsla(236, 100%, 8%, 1) 0%, hsla(0, 0%, 0%, 1) 100%);
+        }
+
+        .dark a {
+            color: #F3715B;
+        }
+    </style>
+</head>
+
+<body>
+    <button class="dark-mode">Dark Mode</button>
+
+    <div class="container">
+        <h1>Cooking with Love 🧡</h1>
+        <h2> Flick of the Wrist</h2>
+
+        <a
+            href="https://www.betterhelp.com/advice/therapy/cooking-can-be-therapeutic-how-culinary-arts-may-improve-mental-health-and-self-care/">
+            <img src="https://www.foodandwine.com/thmb/apE8oIzdh3EaW3wy6HSqhl9VIiQ=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/Dominique-Leach-Makes-Barbecue-More-Inclusive-FT-BLOG0523-a294c1e752084b5d8443192e91c984af.jpg"
+                class="intro-pic" target="_blank" />
+        </a>
+
+        <div class="grid">
+            <img
+                src="https://www.parents.com/thmb/Q1zn8D-x1ZQzSPM9DY_6KshAgmQ=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/GettyImages-1306124449-2000-45a96ffdf59b4015804a462f6dff136a.jpg" />
+
+            <img src="https://qph.cf2.quoracdn.net/main-qimg-b7573bbf0e68ed0b058295f1a3808be3" />
+
+            <img
+                src="https://www.marinij.com/wp-content/uploads/migration/2018/201804/FEATURES_180409934_AR_0_SSSUFHKFVIAC.jpg?w=620" />
+
+            <img
+                src="https://parade.com/.image/t_share/MTkwNTc4NDk4MDg0MzQ5ODIw/oh-soul-cookbook-moms-fried-catfish-with-hot-sauce.jpg" />
+
+        </div>
+
+        <p>As self-care, cooking therapy may help improve overall mental well-being in several ways. For example, people
+            may
+            experience a sense of accomplishment, focus, and mindfulness while cooking. By working with food,
+            individuals
+            can connect to cultural roots and family memories, which may boost comfort and belonging.
+            <br>
+            <br>
+            🍝<a href="https://www.youtube.com/watch?v=QlvLl50dFCo" target="_blank">
+                <strong>Plant-based Spaghetti Recipe</strong></a>
+        </p>
+
+        <button>Let's Cook</button>
+    </div>
+
+    <footer>Coded with 💙 by Julicia</footer>
+</body>
+<script>
+    function changeTheme() {
+        let body = document.querySelector("body");
+
+        // body.classList.toggle("dark");
+
+        if (body.classList.contains("dark")) {
+            body.classList.remove("dark");
+        } else {
+            body.classList.add("dark");
+        }
+    }
+
+    let darkButton = document.querySelector(".dark-mode");
+    darkButton.addEventListener("click", changeTheme);
+</script>
+
+</body>
+
+</html>
